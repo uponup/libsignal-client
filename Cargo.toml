@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "rust/aes-gcm-siv",
+    "rust/poksho",
+    "rust/protocol",
+    "rust/bridge/ffi",
+    "rust/bridge/jni",
+    "rust/bridge/node",
+]
+default-members = [
+    "rust/aes-gcm-siv",
+    "rust/protocol",
+    "rust/poksho",
+]
+
+[patch.crates-io]
+curve25519-dalek = { git = 'https://github.com/signalapp/curve25519-dalek', branch = '3.0.0-lizard2' }
